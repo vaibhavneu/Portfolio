@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Viraj - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Dark Theme Toggle -->
+  <div class="theme-toggle" aria-label="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Header Section -->
+  <header class="parallax">
+    <div class="container">
+      <h1>Vaibhav Viraj</h1>
+      <p>Computer Science Engineer | Data Enthusiast | Machine Learning Practitioner</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I am a passionate Computer Science Engineer with a strong foundation in Data Analytics, Machine Learning, and Artificial Intelligence. 
+        I thrive on solving complex problems using data-driven approaches and have hands-on experience in building predictive models, optimizing databases, 
+        and creating insightful visualizations. My goal is to leverage my technical skills and creativity to contribute to innovative solutions in the tech industry.
+      </p>
+      <div class="fun-facts">
+        <div class="fun-fact">
+          <div class="fact-icon">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <h3>Funny Mishap</h3>
+          <p>I once tried to automate my morning coffee routine but ended up spilling it everywhere. ☕️🤖</p>
+        </div>
+        <div class="fun-fact">
+          <div class="fact-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>RVCE QuizCorp</h3>
+          <p>As a member of RVCE QuizCorp, I’ve hosted and participated in over 20 quizzes, sparking curiosity and learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <div class="education-item">
+      <div class="education-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="education-details">
+        <h3>RV College of Engineering (RVCE), Bengaluru</h3>
+        <p>Bachelor of Engineering in Computer Science and Engineering</p>
+        <p><strong>Duration:</strong> Dec 2020 – Jul 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, C, Java</li>
+      <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI</li>
+      <li><strong>Machine Learning:</strong> Scikit-learn, Hyperopt, SMOTE, Logistic Regression, KNN, Decision Trees, Random Forest</li>
+      <li><strong>Database Management:</strong> MySQL, Data Modeling, ETL Processes</li>
+      <li><strong>Tools & Frameworks:</strong> Jupyter Notebook, Microsoft Power BI, Tableau</li>
+      <li><strong>Cloud Computing:</strong> Microsoft Azure, AWS, GCP</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Football Project -->
+      <div class="project football-project" onclick="openModal('football-modal')">
+        <div class="project-icon">
+          <i class="fas fa-futbol"></i>
+        </div>
+        <div class="project-details">
+          <h3>Replacement Striker Selection for Football Club</h3>
+          <p class="project-subtitle">Machine Learning | Predictive Modeling</p>
+          <p class="project-description">
+            Developed an Expected Goals (xG) Model to predict scoring likelihood based on key situational data. Achieved 92% accuracy using a Gradient Boosting model.
+          </p>
+        </div>
+      </div>
+
+      <!-- Aviation Project -->
+      <div class="project aviation-project" onclick="openModal('aviation-modal')">
+        <div class="project-icon">
+          <i class="fas fa-plane"></i>
+        </div>
+        <div class="project-details">
+          <h3>Customer Satisfaction in Aviation</h3>
+          <p class="project-subtitle">Data Analytics | Predictive Analysis</p>
+          <p class="project-description">
+            Performed EDA to identify key factors affecting customer satisfaction. Implemented a KNN model (k=5) with 93% accuracy for predictive analysis.
+          </p>
+        </div>
+      </div>
+
+      <!-- Fraud Detection Project -->
+      <div class="project fraud-project" onclick="openModal('fraud-modal')">
+        <div class="project-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="project-details">
+          <h3>Fraud Transaction Detection</h3>
+          <p class="project-subtitle">Machine Learning | Data Visualization</p>
+          <p class="project-description">
+            Built fraud detection models using Logistic Regression, KNN, Decision Tree, and Random Forest, achieving over 90% accuracy. Used SMOTE for handling imbalanced data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Let’s connect and collaborate! Feel free to reach out for opportunities, projects, or discussions.</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:valbhavviraj9@gmail.com">valbhavviraj9@gmail.com</a></li>
+      <li><strong>Phone:</strong> +91 7004540401</li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vaibhav-viraj-320bbb170/" target="_blank">LinkedIn Profile</a></li>
+      <li><strong>Resume:</strong> <a href="assets/RESUME VAIBHAV.n.pdf" download>Download Resume</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Vaibhav Viraj. All rights reserved.</p>
+  </footer>
+
+  <!-- Modals -->
+  <div id="football-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('football-modal')">&times;</span>
+      <h2>Replacement Striker Selection for Football Club</h2>
+      <p><strong>Description:</strong> Developed an Expected Goals (xG) Model to predict scoring likelihood based on key situational data. Achieved 92% accuracy using a Gradient Boosting model.</p>
+      <p><strong>Tools Used:</strong> NumPy, Pandas, Scikit-learn, Hyperopt</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Analyzed player performance data to identify key metrics for scoring.</li>
+        <li>Built a predictive model using Gradient Boosting to estimate xG.</li>
+        <li>Optimized hyperparameters using Hyperopt for better model performance.</li>
+      </ul>
+      <p><strong>Outcome:</strong> The model helped the football club identify potential replacement strikers with similar or better scoring potential.</p>
+    </div>
+  </div>
+
+  <div id="aviation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('aviation-modal')">&times;</span>
+      <h2>Customer Satisfaction in Aviation</h2>
+      <p><strong>Description:</strong> Performed EDA to identify key factors affecting customer satisfaction. Implemented a KNN model (k=5) with 93% accuracy for predictive analysis.</p>
+      <p><strong>Tools Used:</strong> NumPy, Pandas, Scikit-learn, Matplotlib</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Analyzed customer feedback data to identify trends and pain points.</li>
+        <li>Built a KNN model to predict customer satisfaction levels.</li>
+        <li>Created visualizations to communicate findings effectively.</li>
+      </ul>
+      <p><strong>Outcome:</strong> Provided actionable insights to improve customer satisfaction in the aviation industry.</p>
+    </div>
+  </div>
+
+  <div id="fraud-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('fraud-modal')">&times;</span>
+      <h2>Fraud Transaction Detection</h2>
+      <p><strong>Description:</strong> Built fraud detection models using Logistic Regression, KNN, Decision Tree, and Random Forest, achieving over 90% accuracy. Used SMOTE for handling imbalanced data.</p>
+      <p><strong>Tools Used:</strong> NumPy, Pandas, Scikit-learn, Imbalanced-learn</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Developed multiple machine learning models to detect fraudulent transactions.</li>
+        <li>Handled imbalanced data using SMOTE for better model performance.</li>
+        <li>Evaluated models using precision, recall, and F1-score metrics.</li>
+      </ul>
+      <p><strong>Outcome:</strong> Successfully identified fraudulent transactions with high accuracy, reducing financial losses.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
